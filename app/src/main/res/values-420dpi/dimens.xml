@@ -1,0 +1,49 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!--insta login-->
+    <dimen name="logininstaimg">200dp</dimen>
+    <dimen name="loginpicsize">100dp</dimen>
+    <dimen name="loginfontmargin">32dp</dimen>
+    <dimen name="loginauthmarginLR">40dp</dimen>
+    <dimen name="loginauthmargintop">50dp</dimen>
+
+    <!--insta fb home-->
+    <dimen name="homepicsize">150dp</dimen>
+    <dimen name="homepicmargin">34dp</dimen>
+    <dimen name="hometextmargin">20dp</dimen>
+    <dimen name="homesharemargin">12dp</dimen>
+    <dimen name="homedetailsmargin">72dp</dimen>
+
+    <!--comment detail-->
+    <dimen name="commentpicsize">50dp</dimen>
+    <dimen name="commentpicmargin">5dp</dimen>
+    <dimen name="commenttextmargin">10dp</dimen>
+    <dimen name="commentcovermarginLR">5dp</dimen>
+    <dimen name="commentcovermargintop">10dp</dimen>
+    <dimen name="commentcoverheight">200dp</dimen>
+    <dimen name="commentboxmargintop">20dp</dimen>
+    <dimen name="commentorpicsize">35dp</dimen>
+    <dimen name="commentusermargin">10dp</dimen>
+
+    <!--insta comment home-->
+    <dimen name="instahomebodymargin">5dp</dimen>
+    <dimen name="instahomecoverheight">200dp</dimen>
+    <dimen name="instahomelikecount">20dp</dimen>
+    <dimen name="instahomepicsize">50dp</dimen>
+    <dimen name="instahomepicmargin">5dp</dimen>
+    <dimen name="instahomepostmargin">10dp</dimen>
+    <dimen name="instahomemenusize">20dp</dimen>
+    <dimen name="instahomemenumargin">10dp</dimen>
+    <dimen name="instahomelikesize">30dp</dimen>
+    <dimen name="instahomecommentsize">25dp</dimen>
+    <dimen name="instahomereplysize">30dp</dimen>
+    <dimen name="instahomeiconmargin">10dp</dimen>
+
+    <!--dialog-->
+    <dimen name="dialogwidth">300dp</dimen>
+    <dimen name="dialogmargin">20dp</dimen>
+</resources>

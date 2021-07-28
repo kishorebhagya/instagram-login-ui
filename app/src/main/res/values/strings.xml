@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Instagramlogin</string>
+    <string name="facebook_app_id">XXXXXXXXXXXXX</string>
+    <string name="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec condimentum ante, quis mattis mi. Proin ut rhoncus libero, ac euismod neque. Ut suscipit, enim a facilisis consequat, orci lacus venenatis orci, at ultricies orci nulla sed ex.</string>
+</resources>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.kishore.instagramlogin.MainActivity">
+
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/logininstaimg"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
+
+
+            <com.example.kishore.instagramlogin.shapeimageview.ShapeImageView
+                android:id="@+id/heart"
+                android:layout_width="@dimen/loginpicsize"
+                android:layout_height="@dimen/loginpicsize"
+                android:layout_below="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                app:siShape="@raw/c" />
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/loginpage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heart"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/loginauthmarginLR"
+                android:layout_marginRight="@dimen/loginauthmarginLR"
+                android:layout_marginTop="@dimen/loginauthmargintop"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/login_travel_transparent_background"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#b3ffffff"
+                    android:textSize="15sp" />
+
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_travel_transparent_background"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#b3ffffff"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_travel_transparent_background"
+                    android:text="Log In"
+                    android:textAllCaps="false"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <!--<com.example.kishore.instagramlogin.iconfonts.MaterialDesignIconsTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&#xe8dc;"
+                    android:textColor="#000"
+                    android:layout_gravity="center"
+                    android:textSize="50dp" />-->
+
+            <com.example.kishore.instagramlogin.iconfonts.FontelloTextView
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginpage"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/loginfontmargin"
+                android:text="&#xe802;"
+                android:textColor="@android:color/white"
+                android:textSize="50dp"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:layout_below="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/info"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                />
+
+            <com.facebook.login.widget.LoginButton
+                android:layout_below="@+id/info"
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

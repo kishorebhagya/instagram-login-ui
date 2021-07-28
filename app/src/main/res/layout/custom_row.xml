@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_below="@+id/heading"
+                android:id="@+id/mainbody"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/instahomebodymargin"
+                android:layout_marginLeft="@dimen/instahomebodymargin"
+                android:layout_marginRight="@dimen/instahomebodymargin">
+
+                <ImageView
+                    android:id="@+id/images"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/instahomecoverheight"
+                    android:scaleType="centerCrop"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/text_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/star_layout"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/starcount"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/instahomelikecount"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.kishore.instagramlogin.shapeimageview.ShapeImageView
+                    android:id="@+id/profile"
+                    android:layout_margin="@dimen/instahomepicmargin"
+                    android:src="@drawable/shapeimageview"
+                    app:siShape="@raw/a"
+                    android:layout_width="@dimen/instahomepicsize"
+                    android:layout_height="@dimen/instahomepicsize" />
+
+                <TextView
+                    android:id="@+id/post"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/instahomepostmargin"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:text="Post" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/option"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/instahomemenumargin"
+                    android:layout_width="@dimen/instahomemenusize"
+                    android:layout_height="@dimen/instahomemenusize"
+                    android:src="@drawable/menu"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/star_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_below="@+id/mainbody"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="@dimen/instahomelikesize"
+                    android:layout_height="@dimen/instahomelikesize"
+                    android:layout_marginRight="@dimen/instahomeiconmargin"
+                    android:layout_marginLeft="@dimen/instahomeiconmargin"
+                    android:src="@drawable/heart" />
+
+                <ImageView
+                    android:id="@+id/comment"
+                    android:layout_width="@dimen/instahomecommentsize"
+                    android:layout_height="@dimen/instahomecommentsize"
+                    android:layout_marginRight="@dimen/instahomeiconmargin"
+                    android:layout_marginLeft="@dimen/instahomeiconmargin"
+                    android:src="@drawable/comment" />
+
+                <ImageView
+                    android:id="@+id/reply"
+                    android:layout_width="@dimen/instahomereplysize"
+                    android:layout_height="@dimen/instahomereplysize"
+                    android:layout_marginRight="@dimen/instahomeiconmargin"
+                    android:layout_marginLeft="@dimen/instahomeiconmargin"
+                    android:src="@drawable/reply" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
